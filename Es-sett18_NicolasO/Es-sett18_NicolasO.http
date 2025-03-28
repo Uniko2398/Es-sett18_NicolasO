@@ -1,6 +1,6 @@
 @Es_sett18_NicolasO_HostAddress = http://localhost:5218
 
-GET {{Es_sett18_NicolasO_HostAddress}}/weatherforecast/
+GET {{Es_sett18_NicolasO_HostAddress}}
 Accept: application/json
 
 ###

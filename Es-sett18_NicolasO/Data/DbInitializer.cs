@@ -10,10 +10,10 @@ namespace Es_sett18_NicolasO.Data
             UserManager<ApplicationUser> userManager,
             RoleManager<ApplicationRole> roleManager)
         {
-            // Creazione del database se non esiste
+           
             await context.Database.EnsureCreatedAsync();
 
-            // Creazione dei ruoli
+            
             if (!await roleManager.RoleExistsAsync("Amministratore"))
             {
                 await roleManager.CreateAsync(new ApplicationRole { Name = "Amministratore" });
@@ -24,7 +24,6 @@ namespace Es_sett18_NicolasO.Data
                 await roleManager.CreateAsync(new ApplicationRole { Name = "Utente" });
             }
 
-            // Creazione dell'utente amministratore
             var adminEmail = "admin@example.com";
             var adminUser = await userManager.FindByEmailAsync(adminEmail);
 
@@ -44,7 +43,7 @@ namespace Es_sett18_NicolasO.Data
                 }
             }
 
-            // Aggiunta di dati di esempio
+           
             if (!context.Artisti.Any())
             {
                 var artisti = new List<Artista>
