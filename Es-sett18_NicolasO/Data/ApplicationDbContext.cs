@@ -1,5 +1,4 @@
 ﻿using Es_sett18_NicolasO.Models;
-using Es_sett18_NicolasO.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 

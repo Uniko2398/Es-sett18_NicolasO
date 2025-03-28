@@ -48,7 +48,7 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Initialize the database
+
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
